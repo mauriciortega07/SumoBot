@@ -16,6 +16,7 @@ const responses = {
 }
 
 const createChatLI = (message, className) => {
+    //CREA EL NUEVO MENSAJE
     const chatLi = document.createElement("li");
     chatLi.classList.add("chat", className);
     let chatContent = className === "peticion" ? `<i><img src="icons/user (1).svg"></i><p>${message}</p>` : `<i><img src="icons/robot_3487450.png"></i><p>${message}</p>`
@@ -24,12 +25,14 @@ const createChatLI = (message, className) => {
 }
 
 function removePunctuation(userMessage) {
+    //QUITA SIGNOS DE ESCRITURA
     const punctuation = /[\.,?¿!´]/g;
     let newText = userMessage.replace(punctuation, "").toLowerCase();
     return newText;
 }
 
 const generateResponse = (userMessage) => {
+    //GENERA LA RESPUESTA DEL BOT SEGUN EL CASO
     const peticion = removePunctuation(userMessage);
     let respuesta;
 
@@ -98,6 +101,7 @@ const generateResponse = (userMessage) => {
 }
 
 const handleChat = () => {
+    //MANEJA EL FUNCIONAMIENTO DEL ENVIO Y ENTREGA DE MENSAJES EN EL CHAT
     let userMessage = chatInput.value.trim();
     if (!userMessage) return;
     chatInput.value = "";
