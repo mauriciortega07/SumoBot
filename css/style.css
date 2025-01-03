@@ -1,0 +1,123 @@
+body {
+  background-color: beige;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: calc(100% - 10px);
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: center;
+  gap: 10px;
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+
+main .instrucciones {
+  margin: 15px;
+  width: 50%;
+}
+main .instrucciones h2 {
+  margin: 5px;
+}
+main .instrucciones p,
+main .instrucciones ul {
+  margin: 12px;
+}
+main .instrucciones p li,
+main .instrucciones ul li {
+  margin: 15px 0px;
+}
+
+.chatbot {
+  position: fixed;
+  height: 29.5rem;
+  background-color: #ffffff;
+  right: 40px;
+  bottom: 30px;
+  width: 420px;
+  opacity: 1;
+  border-radius: 15px;
+  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1), 0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+.chatbot div h2 {
+  background-color: #a51d1d;
+  color: #e7d2d2;
+  padding: 14px;
+  text-align: center;
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  font-weight: 600;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.chatbot .chatbox {
+  height: 18rem;
+  overflow-y: auto;
+  padding: 15px 20px 70px;
+}
+.chatbot .chatbox .chat {
+  display: flex;
+  gap: 20px;
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 15px 0px;
+}
+.chatbot .chatbox .chat p {
+  background-color: #ffe4c4;
+  padding: 10px;
+  border-radius: 10px;
+  width: 60%;
+}
+.chatbot .chatbox .peticion {
+  flex-direction: row-reverse;
+}
+.chatbot .chat-input {
+  border-top: 1px solid #ccc;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.chatbot .chat-input input {
+  border: none;
+  outline: none;
+  height: 20px;
+  width: 100%;
+  font-size: 0.9rem;
+  padding: 16px 15px 16px 0;
+}
+
+header i {
+  width: 60px;
+}
+header i img {
+  width: 100%;
+}
+
+.chatbot .chatbox .chat i {
+  width: 30px;
+  align-content: center;
+}
+.chatbot .chatbox .chat i img {
+  width: 100%;
+}
+.chatbot .chat-input i {
+  width: 10%;
+  align-content: center;
+  visibility: hidden;
+}
+.chatbot .chat-input i img {
+  width: 100%;
+  cursor: pointer;
+}
+.chatbot .chat-input input:valid ~ i {
+  visibility: visible;
+}/*# sourceMappingURL=style.css.map */

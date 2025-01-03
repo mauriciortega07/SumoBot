@@ -1,0 +1,58 @@
+@mixin headerStyle {
+    width: calc(100% - 10px);
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    gap: 10px;
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+
+@mixin chatbotContainer {
+    position: fixed;
+    height: 29.5rem;
+    background-color: #ffffff;
+    right: 40px;
+    bottom: 30px;
+    width: 420px;
+    opacity: 1;
+    border-radius: 15px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+        0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+
+@mixin chatbotTitle {
+    background-color: #a51d1d;
+    color: #e7d2d2;
+    padding: 14px;
+    text-align: center;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    font-weight: 600;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+@mixin chatInputContent {
+    border-top: 1px solid #ccc;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+@mixin inputStyle {
+    border: none;
+    outline: none;
+    height: 20px;
+    width: 100%;
+    font-size: .9rem;
+    padding: 16px 15px 16px 0;
+}

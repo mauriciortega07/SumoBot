@@ -1,0 +1,44 @@
+header {
+    i {
+        width: 60px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+.chatbot {
+    .chatbox {
+        .chat {
+            i {
+                width: 30px;
+                align-content: center;
+    
+                img {
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+
+    .chat-input {
+        i {
+            width: 10%;
+            align-content: center;
+            visibility: hidden;
+            img {
+                width: 100%;
+                cursor: pointer;
+            }
+        }
+
+        & input:valid ~ i {
+            visibility: visible;
+        }
+    }
+
+
+}
